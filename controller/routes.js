@@ -13,9 +13,6 @@ const {
   findSingleManager,
   udpateManagers,signupAdmin,signinadmin
 } = require("./userLogics");
-router.get("/",(req,res)=>{
-  res.send("welcome to hotel mgt backend")
-})
 router.post("/signup", signup);
 router.post("/signin", singin);
 router.get("/getData", getData);
