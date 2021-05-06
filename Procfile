@@ -1,1 +1,1 @@
-web: bash src/index.js
+web: chmod a+x src/index.js
