@@ -4,7 +4,7 @@ const bodyparser = require("body-parser");
 const router = require('../controller/routes');
 const app = express();
 app.use(cors());
-const port = process.env.Port || 1000;
+const port = process.env.PORT || 1000;
 app.use("/user",router)
 app.get("/", (req, res) => {
   res.send("welcome to hotel management website");
@@ -13,3 +13,4 @@ app.get("/", (req, res) => {
 app.listen(port, () => { 
   console.log(`server is listening at port ${port}`);
 });
+
