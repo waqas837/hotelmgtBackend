@@ -2,9 +2,8 @@ const mongoose = require("mongoose");
 const validator = require("validator");
 // this thing/connection url must not be repeated
 mongoose
-  .connect("mongodb+srv://waqasKhan:bughlani1122@cluster0.agwp7.mongodb.net/useSingnup?retryWrites=true&w=majority",
-    // "mongodb://localhost/userSignsUp",
-  
+  .connect("mongodb://localhost/userSignsUp",
+  // "mongodb+srv://waqasKhan:bughlani1122@cluster0.agwp7.mongodb.net/useSingnup?retryWrites=true&w=majority"
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
